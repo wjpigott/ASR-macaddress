@@ -12,7 +12,6 @@ Connect-AzAccount -Identity
         $VM = $vmMap.$VMID  
             if( !(($VM -eq $Null) -Or ($VM.ResourceGroupName -eq $Null) -Or ($VM.RoleName -eq $Null))) 
             {
-    #this check is to ensure that we skip when some data is not available else it will fail
     Write-output "Resource group name ", $VM.ResourceGroupName
     Write-output "Rolename " = $VM.RoleName
     # Get the VM name from Azure Site Recovery
