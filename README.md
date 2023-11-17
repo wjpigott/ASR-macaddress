@@ -1,6 +1,7 @@
 # Changing the Azure MAC Address is not allowed
 In some situations there may be a need to have an Azure Machine have a static MAC Address on the Network Adapter.
 One scenario for this is when using software that requires the MAC address to be locked.
+If you choose to implement this solution. <br> <br> It is highly recommended to use Azure Backup to backup the virtual machine incase during your testing the MAC address would be set on the wrong network adapter causing the virtual machine to become unresponsive.
 
 # Workaround
 Set a static MAC address on a secondary Azure virtual machine network adapter.
