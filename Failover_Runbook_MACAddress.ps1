@@ -22,7 +22,7 @@ Connect-AzAccount -Identity
     # Command to execute the script
     $command = "& '$scriptPath'"
     # Run the script against all the listed VMs
-                   Invoke-AzVMRunCommand -ResourceGroupName hpc-asr -Name $vmName -CommandId 'RunPowerShellScript' -ScriptString $command
+                   Invoke-AzVMRunCommand -ResourceGroupName $VM.ResourceGroupName -Name $vmName -CommandId 'RunPowerShellScript' -ScriptString $command
     Write-Output "Finished"
             }
         }
