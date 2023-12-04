@@ -12,6 +12,7 @@ I would like to extend on this solution to be utilized with Azure Site Recovery 
 ## Requirements
 Azure Site Recovery Plan - with a post script utilizing an Azure Automation Account
 Script pre-existing (for this example) on the virtual machine to set the MAC address.
+Files included for Windows and Linux automation account runbook and scripts that would pre-exist on the virtual machine.
 
 ## Gotchas during research
 When Azure Site Recovery fails over a virtual machine with multiple network adapters it isn't clear which adapter will become the primary default adapter used for Azure traffic. 
